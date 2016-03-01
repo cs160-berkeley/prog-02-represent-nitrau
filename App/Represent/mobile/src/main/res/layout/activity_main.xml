@@ -8,8 +8,16 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:background="@drawable/mainpic"
         android:layout_height="220dp">
+
+        <TextView
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
@@ -26,6 +34,7 @@
             android:layout_width="200dp"
             android:textAlignment="center"
             android:text="@string/greeting"
+            android:textColor="@color/black"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
@@ -48,18 +57,22 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/enter_zip"
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:id="@+id/ziptext"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
                 android:layout_width="80dp"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
+                android:inputType="number"/>
 
             <Button
                 android:layout_width="60dp"
                 android:text="@string/go"
-                android:layout_height="wrap_content" />
+                android:onClick="onGo"
+                android:layout_height="35dp" />
 
         </LinearLayout>
 
@@ -67,6 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/or"
+            android:textColor="@color/black"
             android:layout_height="wrap_content" />
 
         <TextView
@@ -79,6 +93,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:layout_height="wrap_content" />
 
     </RelativeLayout>

@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Represent</string>
-    <string name="enter_zip">Enter your zip code:</string>
+    <string name="title">REPRESENT!</string>
+    <string name="enter_zip">Enter your ZIP code:</string>
     <string name="greeting">To view your congressional representatives, please:</string>
     <string name="or">or</string>
     <string name="go">Go</string>
     <string name="select_location">Select your current location</string>
+    <string name="your_representatives">Your representatives:</string>
+    <string name="email">Email: </string>
+    <string name="website">Website: </string>
 </resources>
