@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Select location clicked");
         Intent intent = new Intent(getBaseContext(), CongressionalActivity.class);
         intent.putExtra("ZIP_TRUE", false);
+        intent.putExtra("LOCATION", "-58.596° W, 60° N");
         startActivity(intent);
     }
 }

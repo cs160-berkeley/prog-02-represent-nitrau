@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clickable="true"
+    android:onClick="onSelect"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_portrait"
+        android:src="@drawable/rp_ca_13_lee_barbara"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/fragment_type"
+            android:textColor="#000"
+            android:text="Representative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_name"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="Barbara Lee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_party_color"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blue_circle"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/fragment_party_name"
+            android:textSize="16dp"
+            android:text="D"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>
+
+

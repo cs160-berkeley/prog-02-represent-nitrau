@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,9 +26,21 @@ public class CongressionalActivity extends AppCompatActivity {
         System.out.println("Congressional Activity started");
 
         Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        boolean zip = extras.getBoolean("ZIP_TRUE");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_congressional);
+
+        String location;
+
+        if (zip) {
+            location = (String) extras.get("ZIP_CODE");
+        } else {
+            location = extras.getString("LOCATION");
+        }
+        TextView header = (TextView)findViewById(R.id.congressional_header);
+        header.setText("Your representatives for " + location);
 
         //information to be retrieved from APIs in part C, this is just demo data
         representativeArrayList = new ArrayList<>();
@@ -38,9 +51,9 @@ public class CongressionalActivity extends AppCompatActivity {
 
         //send via phone to watch service
 
-        Intent watch = new Intent(getBaseContext(), PhoneToWatchService.class);
-        watch.putExtra("REPRESENTATIVES", representativeArrayList);
-        startService(watch);
+        Intent watchIntent = new Intent(getBaseContext(), PhoneToWatchService.class);
+        watchIntent.putExtra("LOCATION", location);
+        startService(watchIntent);
 
         viewPager = (ViewPager) findViewById(R.id.view_representatives);
         adapter = new CustomSlideAdapter(this, representativeArrayList);
@@ -53,6 +66,8 @@ public class CongressionalActivity extends AppCompatActivity {
         int current = viewPager.getCurrentItem();
         Representative currentRep = representativeArrayList.get(current);
         Intent intent = new Intent(getBaseContext(), DetailedActivity.class);
+        intent.putExtra("DETAIL", currentRep.getName());
+        startActivity(intent);
 
     }
 

@@ -1,5 +1,7 @@
 package com.example.sarah.represent;
 
+import com.google.android.gms.wearable.DataMap;
+
 /**
  * Created by Sarah on 2/28/2016.
  */
@@ -49,5 +51,14 @@ public class Representative {
 
     public String getWebsite() {
         return website;
+    }
+
+    public DataMap toDataMap() {
+        DataMap dm = new DataMap();
+        dm.putInt("portrait", portrait);
+        dm.putString("type", type);
+        dm.putString("name", name);
+        dm.putString("party", party);
+        return dm;
     }
 }

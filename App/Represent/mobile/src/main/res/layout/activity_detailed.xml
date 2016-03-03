@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/detailed_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -24,6 +26,8 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
                 android:text="Democratic"
                 android:textColor="@color/democratic"
                 android:id="@+id/detailed_party"
@@ -31,20 +35,33 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/detailed_type"
-                android:text="Representative"
+                android:text="Representative:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/detailed_name"
+                android:textSize="16dp"
+                android:text="Barbara Lee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Term ends:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:textSize="16dp"
+                android:id="@+id/detailed_end_date"
+                android:text="January 3, 2017"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -52,6 +69,47 @@
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/detailed_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/commitees_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/committees_title"
+                android:text="Committees"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bills_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/recent_bills_title"
+                android:text="Recent sponsored bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
