@@ -12,12 +12,12 @@ See [Prog 02-B](https://youtu.be/QFAewoNA12g)
 
 ## Screenshots
 
-<img src="screenshots/mobile_main.png" height="400" alt="Screenshot"/>
-<img src="screenshots/mobile_congressional.png" height="400" alt="Screenshot"/>
-<img src="screenshots/mobile_detail.png" height="400" alt="Screenshot"/>
-<img src="screenshots/wear_main_1.png" height="400" alt="Screenshot"/>
-<img src="screenshots/wear_main_2.png" height="400" alt="Screenshot"/>
-<img src="screenshots/wear_vote.png" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_main.PNG" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_congressional.PNG" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_detail.PNG" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_main_1.PNG" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_main_2.PNG" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_vote.PNG" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
