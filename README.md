@@ -1,20 +1,25 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+The Represent! app is an application for mobile and wear that shows the user the congressional representatives and the 2012 election results for their location.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Sarah Au ([sau@berkeley.edu](mailto:sau@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Prog 02-B](https://youtu.be/QFAewoNA12g)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_congressional.png" height="400" alt="Screenshot"/>
+<img src="screenshots/mobile_detail.png" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_main_1.png" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_main_2.png" height="400" alt="Screenshot"/>
+<img src="screenshots/wear_vote.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+* Thanks to CS160 Staff for providing methods to connect the Phone and Watch
+* [StackOverflow](http://stackoverflow.com/questions/5745814/android-change-horizonal-progress-bar-color) for the code to change the progress bar color
