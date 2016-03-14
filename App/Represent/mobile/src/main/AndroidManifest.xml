@@ -27,6 +27,15 @@
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>
         </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB3RDrCbq-SU6EAekKh-M5QNGQLc6Tu2Mk"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8fc6ff09ea4f725b782c8eb11105103540f1952a" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

@@ -12,10 +12,9 @@
         <ImageView
             android:layout_alignParentLeft="true"
             android:id="@+id/detailed_portrait"
-            android:src="@drawable/rp_ca_13_lee_barbara"
-            android:layout_width="200dp"
+            android:layout_width="120dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp" />
+            android:layout_height="120dp" />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -26,42 +25,46 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:text=""
                 android:textStyle="bold"
-                android:textSize="16dp"
-                android:text="Democratic"
+                android:textSize="14dp"
                 android:textColor="@color/democratic"
                 android:id="@+id/detailed_party"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:text=""
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="16dp"
+                android:textSize="14dp"
                 android:layout_marginTop="10dp"
                 android:id="@+id/detailed_type"
-                android:text="Representative:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:textColor="@color/black"
+                android:text=""
                 android:id="@+id/detailed_name"
-                android:textSize="16dp"
-                android:text="Barbara Lee"
+                android:textSize="14dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:textStyle="bold"
-                android:textSize="16dp"
+                android:textSize="14dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@color/black"
                 android:text="Term ends:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:textSize="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14dp"
                 android:id="@+id/detailed_end_date"
-                android:text="January 3, 2017"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -84,7 +87,9 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textSize="18dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:id="@+id/committees_title"
                 android:text="Committees"
                 android:layout_width="wrap_content"
@@ -92,21 +97,31 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/bills_layout"
-            android:orientation="vertical"
+        <TextView
             android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/recent_bills_title"
+            android:text="Recent sponsored bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:textSize="18dp"
-                android:id="@+id/recent_bills_title"
-                android:text="Recent sponsored bills"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/bills_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
 
     </LinearLayout>

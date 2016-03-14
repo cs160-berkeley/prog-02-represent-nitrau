@@ -22,6 +22,7 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
     private GoogleApiClient mWatchApiClient;
     private String name;
     private String action;
+    private String tag = "WEAR:TOPHONE";
     private List<Node> nodes = new ArrayList<>();
 
     @Override
@@ -31,7 +32,7 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
         System.out.println(action);
         if (action.matches("detail")) {
             name = extras.getString("REP");
-            System.out.println(name);
+            Log.d(tag, name);
         }
         name = extras.getString("REP");
         mWatchApiClient = new GoogleApiClient.Builder( this )
